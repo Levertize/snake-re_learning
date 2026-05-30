@@ -1,0 +1,19 @@
+=== Snake RL Training Log ===
+Started: 2026-05-30 07:48:51
+Log file: logs/training_20260530_074851.log
+========================================
+[Episode    1] Score:   5 | Record:   5 | Mean:   5.00 | Epsilon: 0.9900 | Memory:    100
+=== Snake RL Training Log ===
+Started: 2026-05-30 07:48:51
+Log file: logs/training_20260530_074851.log
+========================================
+[Episode    1] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9950 | Memory:    113
+[Episode    2] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9900 | Memory:    149
+[Episode    3] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9851 | Memory:    210
+[Episode    4] Score:   1 | Record:   1 | Mean:   0.25 | Epsilon: 0.9801 | Memory:    258
+[Episode    5] Score:   0 | Record:   1 | Mean:   0.20 | Epsilon: 0.9752 | Memory:    359
+[Episode    6] Score:   0 | Record:   1 | Mean:   0.17 | Epsilon: 0.9704 | Memory:    414
+[Episode    7] Score:   0 | Record:   1 | Mean:   0.14 | Epsilon: 0.9655 | Memory:    482
+[Episode    8] Score:   0 | Record:   1 | Mean:   0.12 | Epsilon: 0.9607 | Memory:    523
+[Episode    9] Score:   0 | Record:   1 | Mean:   0.11 | Epsilon: 0.9559 | Memory:    558
+[Episode   10] Score:   0 | Record:   1 | Mean:   0.10 | Epsilon: 0.9511 | Memory:    690
