@@ -124,9 +124,9 @@ def run_e2e_training(num_episodes=500, print_every=50):
     # Evaluasi target
     target_mean = 10
     if last_100_mean >= target_mean:
-        print(f"  ✅ TARGET TERCAPAI! Mean score (last 100) = {last_100_mean:.2f} >= {target_mean}")
+        print(f"  [PASS] TARGET TERCAPAI! Mean score (last 100) = {last_100_mean:.2f} >= {target_mean}")
     else:
-        print(f"  ⚠️  TARGET BELUM TERCAPAI. Mean score (last 100) = {last_100_mean:.2f} < {target_mean}")
+        print(f"  [WARN] TARGET BELUM TERCAPAI. Mean score (last 100) = {last_100_mean:.2f} < {target_mean}")
         print(f"      Pertimbangkan: jalankan lebih banyak episode atau tuning hyperparameter.")
 
     print("=" * 60)
