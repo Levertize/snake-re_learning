@@ -10,7 +10,6 @@
 # =============================================================================
 
 import matplotlib.pyplot as plt
-from IPython import display
 
 
 plt.ion()  # Aktifkan interactive mode — plot bisa di-update tanpa blocking
@@ -29,9 +28,6 @@ def plot_training(scores, mean_scores):
         scores (list[int]): Daftar score dari setiap episode
         mean_scores (list[float]): Daftar rata-rata score kumulatif
     """
-    display.clear_output(wait=True)
-    display.display(plt.gcf())
-
     plt.clf()  # Bersihkan figure sebelum menggambar ulang
 
     plt.title('Snake RL Agent — Training Progress')

@@ -1,0 +1,91 @@
+=== Snake RL Training Log ===
+Started: 2026-05-30 07:50:22
+Log file: logs/training_20260530_075022.log
+========================================
+Hyperparameters:
+  Grid: 20x20
+  Network: 11 → 256 → 3
+  LR: 0.001, Gamma: 0.9
+  Epsilon: 1.0 → 0.01 (decay=0.995)
+  Batch: 1000, Memory: 100000
+  Rewards: eat=10, die=-10, step=0
+========================================
+Training dimulai! Tekan Ctrl+C atau tutup window untuk berhenti.
+
+[Episode    1] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9950 | Memory:     64
+[Episode    2] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9900 | Memory:     98
+[Episode    3] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9851 | Memory:    179
+[Episode    4] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9801 | Memory:    197
+[Episode    5] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9752 | Memory:    338
+[Episode    6] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9704 | Memory:    384
+[Episode    7] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9655 | Memory:    505
+[Episode    8] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9607 | Memory:    532
+[Episode    9] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9559 | Memory:    576
+[Episode   10] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9511 | Memory:    603
+[Episode   11] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9464 | Memory:    675
+[Episode   12] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9416 | Memory:    802
+[Episode   13] Score:   1 | Record:   1 | Mean:   0.08 | Epsilon: 0.9369 | Memory:   1002
+[Episode   14] Score:   0 | Record:   1 | Mean:   0.07 | Epsilon: 0.9322 | Memory:   1039
+[Episode   15] Score:   1 | Record:   1 | Mean:   0.13 | Epsilon: 0.9276 | Memory:   1177
+[Episode   16] Score:   0 | Record:   1 | Mean:   0.12 | Epsilon: 0.9229 | Memory:   1326
+[Episode   17] Score:   0 | Record:   1 | Mean:   0.12 | Epsilon: 0.9183 | Memory:   1347
+[Episode   18] Score:   1 | Record:   1 | Mean:   0.17 | Epsilon: 0.9137 | Memory:   1381
+[Episode   19] Score:   0 | Record:   1 | Mean:   0.16 | Epsilon: 0.9092 | Memory:   1450
+[Episode   20] Score:   0 | Record:   1 | Mean:   0.15 | Epsilon: 0.9046 | Memory:   1493
+[Episode   21] Score:   0 | Record:   1 | Mean:   0.14 | Epsilon: 0.9001 | Memory:   1577
+[Episode   22] Score:   2 | Record:   2 | Mean:   0.23 | Epsilon: 0.8956 | Memory:   1712
+[Episode   23] Score:   0 | Record:   2 | Mean:   0.22 | Epsilon: 0.8911 | Memory:   1752
+[Episode   24] Score:   0 | Record:   2 | Mean:   0.21 | Epsilon: 0.8867 | Memory:   1792
+[Episode   25] Score:   0 | Record:   2 | Mean:   0.20 | Epsilon: 0.8822 | Memory:   1861
+[Episode   26] Score:   0 | Record:   2 | Mean:   0.19 | Epsilon: 0.8778 | Memory:   1928
+[Episode   27] Score:   0 | Record:   2 | Mean:   0.19 | Epsilon: 0.8734 | Memory:   2043
+[Episode   28] Score:   0 | Record:   2 | Mean:   0.18 | Epsilon: 0.8691 | Memory:   2097
+[Episode   29] Score:   0 | Record:   2 | Mean:   0.17 | Epsilon: 0.8647 | Memory:   2289
+[Episode   30] Score:   0 | Record:   2 | Mean:   0.17 | Epsilon: 0.8604 | Memory:   2319
+[Episode   31] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.8561 | Memory:   2368
+[Episode   32] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.8518 | Memory:   2393
+[Episode   33] Score:   0 | Record:   2 | Mean:   0.15 | Epsilon: 0.8475 | Memory:   2518
+[Episode   34] Score:   0 | Record:   2 | Mean:   0.15 | Epsilon: 0.8433 | Memory:   2563
+[Episode   35] Score:   0 | Record:   2 | Mean:   0.14 | Epsilon: 0.8391 | Memory:   2607
+[Episode   36] Score:   0 | Record:   2 | Mean:   0.14 | Epsilon: 0.8349 | Memory:   2648
+[Episode   37] Score:   0 | Record:   2 | Mean:   0.14 | Epsilon: 0.8307 | Memory:   2715
+[Episode   38] Score:   0 | Record:   2 | Mean:   0.13 | Epsilon: 0.8266 | Memory:   2749
+[Episode   39] Score:   0 | Record:   2 | Mean:   0.13 | Epsilon: 0.8224 | Memory:   2802
+[Episode   40] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.8183 | Memory:   2823
+[Episode   41] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.8142 | Memory:   2907
+[Episode   42] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.8102 | Memory:   2939
+[Episode   43] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.8061 | Memory:   2981
+[Episode   44] Score:   0 | Record:   2 | Mean:   0.11 | Epsilon: 0.8021 | Memory:   3050
+[Episode   45] Score:   0 | Record:   2 | Mean:   0.11 | Epsilon: 0.7981 | Memory:   3088
+[Episode   46] Score:   1 | Record:   2 | Mean:   0.13 | Epsilon: 0.7941 | Memory:   3122
+[Episode   47] Score:   0 | Record:   2 | Mean:   0.13 | Epsilon: 0.7901 | Memory:   3140
+[Episode   48] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.7862 | Memory:   3177
+[Episode   49] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.7822 | Memory:   3228
+[Episode   50] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.7783 | Memory:   3339
+[Episode   51] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.7744 | Memory:   3407
+[Episode   52] Score:   0 | Record:   2 | Mean:   0.12 | Epsilon: 0.7705 | Memory:   3442
+[Episode   53] Score:   0 | Record:   2 | Mean:   0.11 | Epsilon: 0.7667 | Memory:   3496
+[Episode   54] Score:   0 | Record:   2 | Mean:   0.11 | Epsilon: 0.7629 | Memory:   3586
+[Episode   55] Score:   0 | Record:   2 | Mean:   0.11 | Epsilon: 0.7590 | Memory:   3698
+[Episode   56] Score:   0 | Record:   2 | Mean:   0.11 | Epsilon: 0.7553 | Memory:   3753
+[Episode   57] Score:   0 | Record:   2 | Mean:   0.11 | Epsilon: 0.7515 | Memory:   3789
+[Episode   58] Score:   0 | Record:   2 | Mean:   0.10 | Epsilon: 0.7477 | Memory:   3899
+[Episode   59] Score:   1 | Record:   2 | Mean:   0.12 | Epsilon: 0.7440 | Memory:   3915
+[Episode   60] Score:   1 | Record:   2 | Mean:   0.13 | Epsilon: 0.7403 | Memory:   3993
+[Episode   61] Score:   1 | Record:   2 | Mean:   0.15 | Epsilon: 0.7366 | Memory:   4038
+[Episode   62] Score:   1 | Record:   2 | Mean:   0.16 | Epsilon: 0.7329 | Memory:   4068
+[Episode   63] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.7292 | Memory:   4083
+[Episode   64] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.7256 | Memory:   4105
+[Episode   65] Score:   0 | Record:   2 | Mean:   0.15 | Epsilon: 0.7219 | Memory:   4145
+[Episode   66] Score:   0 | Record:   2 | Mean:   0.15 | Epsilon: 0.7183 | Memory:   4192
+[Episode   67] Score:   1 | Record:   2 | Mean:   0.16 | Epsilon: 0.7147 | Memory:   4219
+[Episode   68] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.7112 | Memory:   4253
+[Episode   69] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.7076 | Memory:   4344
+[Episode   70] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.7041 | Memory:   4372
+[Episode   71] Score:   0 | Record:   2 | Mean:   0.15 | Epsilon: 0.7005 | Memory:   4391
+[Episode   72] Score:   0 | Record:   2 | Mean:   0.15 | Epsilon: 0.6970 | Memory:   4411
+[Episode   73] Score:   1 | Record:   2 | Mean:   0.16 | Epsilon: 0.6936 | Memory:   4540
+[Episode   74] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.6901 | Memory:   4647
+[Episode   75] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.6866 | Memory:   4679
+[Episode   76] Score:   0 | Record:   2 | Mean:   0.16 | Epsilon: 0.6832 | Memory:   4695
+[Episode   77] Score:   1 | Record:   2 | Mean:   0.17 | Epsilon: 0.6798 | Memory:   4735
