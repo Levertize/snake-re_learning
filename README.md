@@ -2,6 +2,8 @@
 
 AI agent yang belajar bermain game Snake secara otonom menggunakan **Deep Q-Network (DQN)** dengan Experience Replay.
 
+![Snake RL Agent Demo](demo.gif)
+
 Agent belajar murni dari trial and error — tanpa hardcoded rules. Setelah ~300 episode training (~1 menit), agent sudah bisa bermain dengan rata-rata score 12+.
 
 ---
