@@ -15,6 +15,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import numpy as np
 
 import sys
 import os
@@ -140,10 +141,12 @@ class QTrainer:
             Q_new = reward                                [jika done]
         """
         # Konversi semua input ke tensor PyTorch
-        state = torch.tensor(state, dtype=torch.float)
-        next_state = torch.tensor(next_state, dtype=torch.float)
-        action = torch.tensor(action, dtype=torch.long)
-        reward = torch.tensor(reward, dtype=torch.float)
+        # Konversi ke numpy array dulu jika input berupa list of arrays,
+        # untuk menghindari overhead konversi satu-per-satu yang lambat
+        state = torch.tensor(np.array(state), dtype=torch.float)
+        next_state = torch.tensor(np.array(next_state), dtype=torch.float)
+        action = torch.tensor(np.array(action), dtype=torch.long)
+        reward = torch.tensor(np.array(reward), dtype=torch.float)
 
         # Jika input single experience (1D), tambahkan dimensi batch
         # Contoh: shape (11,) → (1, 11) agar kompatibel dengan batch processing
