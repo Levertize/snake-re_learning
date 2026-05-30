@@ -137,7 +137,7 @@ def profile_training(num_episodes=50):
     # Highlight bottleneck
     bottleneck_name, bottleneck_time = max(components, key=lambda x: x[1])
     bottleneck_pct = bottleneck_time / total_tracked * 100 if total_tracked > 0 else 0
-    print(f"🔍 Bottleneck: {bottleneck_name} ({bottleneck_pct:.1f}% of tracked time)")
+    print(f">> Bottleneck: {bottleneck_name} ({bottleneck_pct:.1f}% of tracked time)")
     print()
 
 
