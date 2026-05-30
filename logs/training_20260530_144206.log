@@ -1,0 +1,27 @@
+=== Snake RL Training Log ===
+Started: 2026-05-30 14:42:06
+Log file: logs/training_20260530_144206.log
+========================================
+Hyperparameters:
+  Grid: 20x20
+  Network: 11 -> 256 -> 3
+  LR: 0.001, Gamma: 0.9
+  Epsilon: 1.0 -> 0.01 (decay=0.99)
+  Batch: 1000, Memory: 100000
+  Rewards: eat=10, die=-10, step=0
+========================================
+Training 10 episode. Tekan Ctrl+C untuk berhenti lebih awal.
+
+[Episode    1] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9900 | Memory:     26
+[Episode    2] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9801 | Memory:     68
+[Episode    3] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9703 | Memory:    120
+[Episode    4] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9606 | Memory:    147
+[Episode    5] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9510 | Memory:    166
+[Episode    6] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9415 | Memory:    263
+[Episode    7] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9321 | Memory:    301
+[Episode    8] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9227 | Memory:    393
+[Episode    9] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9135 | Memory:    457
+[Episode   10] Score:   0 | Record:   0 | Mean:   0.00 | Epsilon: 0.9044 | Memory:    564
+
+Training selesai! 10 episode.
+Record: 0 | Mean score: 0.00
