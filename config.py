@@ -18,7 +18,7 @@ LEARNING_RATE = 0.001   # Learning rate untuk optimizer Adam
 GAMMA         = 0.9     # Discount factor — seberapa penting reward masa depan
 EPSILON_START = 1.0     # Epsilon awal — 100% explorasi (random action)
 EPSILON_END   = 0.01    # Epsilon akhir — 1% explorasi (hampir pure exploitation)
-EPSILON_DECAY = 0.995   # Faktor pengurangan epsilon setiap episode
+EPSILON_DECAY = 0.990   # Faktor pengurangan epsilon setiap episode (lebih cepat konvergen)
 MEMORY_SIZE   = 100_000 # Kapasitas replay buffer (experience yang disimpan)
 BATCH_SIZE    = 1_000   # Jumlah experience per training batch
 

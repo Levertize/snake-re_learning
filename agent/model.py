@@ -165,20 +165,25 @@ class QTrainer:
         # Q-value untuk aksi yang benar-benar diambil
         target = pred.clone()
 
-        # --- Hitung target Q-values menggunakan Bellman equation ---
-        for idx in range(len(done)):
-            q_new = reward[idx]
+        # --- Hitung target Q-values menggunakan Bellman equation (vektorisasi) ---
+        # Satu forward pass untuk seluruh batch next_states sekaligus,
+        # jauh lebih cepat daripada loop Python per-sample
+        with torch.no_grad():
+            next_q_values = self.model(next_state)            # Shape: (batch, 3)
+            max_next_q = torch.max(next_q_values, dim=1)[0]   # Shape: (batch,)
 
-            if not done[idx]:
-                # Jika episode belum selesai, tambahkan discounted future reward
-                # Q_new = reward + gamma * max(Q(next_state))
-                q_new = reward[idx] + self.gamma * torch.max(
-                    self.model(next_state[idx])
-                )
+        # done_tensor: True→0, False→1 untuk masking future reward
+        # Jika done=True, future reward di-nol-kan (episode sudah selesai)
+        done_tensor = torch.tensor(done, dtype=torch.float)
 
-            # Update hanya Q-value untuk aksi yang diambil
-            # argmax(action[idx]) mengkonversi one-hot [0,1,0] → index 1
-            target[idx][torch.argmax(action[idx]).item()] = q_new
+        # Bellman equation (vektorisasi):
+        # Q_new = reward + gamma * max(Q(next_state)) * (1 - done)
+        q_new = reward + self.gamma * max_next_q * (1 - done_tensor)
+
+        # Update hanya Q-value untuk aksi yang diambil
+        # argmax mengkonversi one-hot [0,1,0] → index 1
+        action_indices = torch.argmax(action, dim=1)  # Shape: (batch,)
+        target[torch.arange(len(action_indices)), action_indices] = q_new
 
         # --- Backpropagation ---
         self.optimizer.zero_grad()          # Reset gradient
